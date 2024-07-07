@@ -1,0 +1,335 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+nav{
+    background-image:linear-gradient(#900C3F,#C70039);
+    height:60px;
+    width:100vw;
+    display:flex;
+    position: sticky;
+}
+.logo{
+    color:black;
+    font-family: "brody script";
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 8px;
+    font-size: 30px;
+    margin-right: 750px;
+}
+.menu{
+    padding-top: 15px;
+}
+nav .menu a{
+    color:white;
+    margin-right: 50px;
+    font-family:"calbiri";
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav .menu a:hover{
+color:black;
+transition:all 0.4s ease 0s;
+}
+nav .menu a img:hover{
+color:black;
+transition:all 0.4s ease 0s;
+}
+main{
+    height:50%;
+    width:100vw;
+}
+.slide{
+    height:600px;
+    width: 100vw;
+    top:60px;
+    overflow: hidden;
+}
+.img{
+    height:600px;
+    width: 100vw;
+    display: flex;
+    background-size: cover;
+    animation:change 20s infinite ease;
+}
+main .img img{
+    height:600px;
+    width: 100vw;
+    background-image: url("pexels-zhanzat-1827130.jpg");
+    background-size: cover;
+    transform: translateX(100vw);
+}
+@keyframes change {
+    0%{
+        background-image: url("pexels-zhanzat-1827130.jpg");
+    }
+    30%{
+        background-image: url("boutique.webp");
+    }
+    60%{
+        background-image: url("empty-boutique-shopping-centre.jpg");
+    }
+    100%{
+        background-image: url("designer-creates-clothes-studio.jpg");
+    }
+
+}
+.quote{
+    position:absolute;
+    top: 25%;
+    padding-left: 60px;
+}
+.quote p{
+    font-family: "brush script";
+    font-size: 50px;
+    color:black;
+    font-weight: bold;
+}
+.quote a button{
+background-color: #C70039;
+color:black;
+font-size: 30px;
+margin-left: 600px;
+height: 60px;
+width:150px;
+font-family: "Tahoma";
+margin-top: 100px;
+border-radius: 30px;
+border-color: black;
+border-width: 2px;
+border-style: solid;
+}
+.quote a button:hover{
+    background-color:#DC143C;
+    box-shadow:3px 3px 3px 3px rgb(54, 48, 48);
+}
+.box{ ;
+    display:flex;
+    margin-top: 20px;
+    position:absolute;
+    color:white;
+}
+#box1{
+    height:600px;
+    width:400px;
+    border: 3px;
+    background-color: green;
+    margin: 40px 40px;
+    background-image: url("two-stylish-shop-assistants-elegantly-dressed-working-menswear-store.jpg");
+    background-size: cover;
+    border-radius: 50px;
+    border-color:black;
+    border-width: 5px;
+    border-style: solid;
+    box-shadow: 0rem;
+}
+#box1 h1{
+    color: white;
+    padding-left:80px;
+}
+#box2{
+    height:600px;
+    width:400px;
+    border: 3px;
+    background-color: aquamarine;
+    margin: 40px 40px;
+    background-image: url("mannequin-wearing-rose-flowers.jpg");
+    background-size: cover;
+    border-radius: 50px;
+    border-color:black;
+    box-shadow: 0rem;
+    border-width: 5px;
+    border-style: solid;
+}
+#box2 h1{
+    color: white;
+    padding-left:100px;
+}
+#box3{
+    height:600px;
+    width:400px;
+    border: 3px;
+    background-color: crimson;
+    margin: 40px 40px;
+    background-image: url("view-comical-scene-with-child.jpg");
+    background-size: cover;
+    border-radius: 50px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:black;
+    box-shadow: 0rem;
+}
+#box3 h1{
+    color: white;
+    padding-left:80px;
+}
+main hr{
+    color: grey;
+}
+.categories{
+    position:absolute;
+    top:1400px;
+    display:flex;
+}
+#accessories{
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+    background-color:coral;
+    margin:50px;
+    background-image: url("workplace-business-modern-male-accessories-laptop-black-background.jpg");
+    background-size: cover;
+    border-color:black;
+    border-width: 5px;
+    border-style: solid;
+}
+#accessories h1{
+    position: absolute;
+    top:250px;
+}
+#footwear{
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+    background-color:darkmagenta;
+    margin: 50px;
+    background-image: url("still-life-say-no-fast-fashion.jpg");
+    background-size: cover;
+    border-color:black;
+    border-width: 5px;
+    border-style: solid;
+}
+#footwear h1{
+    position: absolute;
+    top:250px;
+}
+#dresses{
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+    background-color:darkred;
+    margin:50px;
+    background-image: url("ladies-evening-dress-elegant-women-long-gown.jpg");
+    background-size: cover;
+    border-color:black;
+    border-width: 5px;
+    border-style: solid;
+}
+#dresses h1{
+    position: absolute;
+    top:250px;
+}
+#handbags{
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+    background-color:greenyellow;
+    margin: 50px;
+    background-image: url("elegantly-crafted-purses-display-each-telling-story-fashion-craftsmanship.jpg");
+    background-size: cover;
+    border-color:black;
+    border-width: 5px;
+    border-style: solid;
+}
+#handbags h1{
+    position: absolute;
+    top:250px;
+}
+#jwelleries{
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+    background-color:palevioletred;
+    margin: 50px;
+    background-image: url("beautiful-luxury-necklace-jewelry-stand-neck.jpg");
+    background-size: cover;
+    border-color:black;
+    border-width: 5px;
+    border-style: solid;
+}
+#jwelleries h1{
+    position: absolute;
+    top:250px;
+}
+footer{
+    position: absolute;
+    top:2000px;
+    background-color: black;
+    height: 400px;
+    width: 100vw;
+    border-color:black;
+    border-width: 5px;
+    border-style: solid;
+}
+.info{
+    display:flex;
+    color: white;
+}
+#contact{
+    font-size: 20px;
+    padding: 100px 30px 100px;
+}
+#links{
+    padding-top:100px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.social{
+    display:flex;
+}
+#insta{
+    height:25px;
+    width:25px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: aliceblue;
+    background-size: cover;
+}
+#facebook{
+    height:25px;
+    width:25px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: aliceblue;
+    background-size: cover;
+}
+#twitter{
+    height:25px;
+    width:25px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: aliceblue;
+    background-size: cover;
+}
+#whatsapp{
+    height:25px;
+    width:25px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: aliceblue;
+    background-size: cover;
+}
+#apps{
+    padding-top:100px;
+    font-size: 20px;
+    margin-left: 40px;
+}
+#boutique{
+    padding-top:100px;
+    padding-left: 30px;
+    font-size: 20px;
+    margin-left: 100px;
+}
+hr{
+    bottom: 100px;
+}
+footer p{
+    font-size: 18px;
+    color: white;
+}
+#links ul{
+    list-style-type: none;
+}
